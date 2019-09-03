@@ -78,9 +78,9 @@ class TicTacToe
                 won? || full?
         end
 
-def winner(board)
-        if win_comb = won?(board)
-                return board[win_comb[0]]
+        def winner
+                if win_comb = won?
+                        return @board[win_comb.first]
+                end
         end
-end
 end

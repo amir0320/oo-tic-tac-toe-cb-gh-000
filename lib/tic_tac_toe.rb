@@ -65,4 +65,22 @@ class TicTacToe
                         position_taken?(win_combination.first)
                 end
         end
+
+        def full?
+                @board.all? {|index| index != " "}
+        end
+
+        def draw?
+                !won? && full?
+        end
+
+        def over?(board)
+                won? || full?
+        end
+
+def winner(board)
+        if win_comb = won?(board)
+                return board[win_comb[0]]
+        end
+end
 end

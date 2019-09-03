@@ -84,4 +84,8 @@ class TicTacToe
                         return @board[win_comb.first]
                 end
         end
+
+        def play
+
+        end
 end
